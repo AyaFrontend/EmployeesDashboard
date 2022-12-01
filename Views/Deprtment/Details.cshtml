@@ -1,0 +1,17 @@
+﻿@model EmployeesDashboard.Models.DepartmentViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div class="row">
+    <div class="col-8">
+        <partial name="_DetailsDeleteDepartPartialView" model="@Model" />
+        <div>
+            <a class="btn btn-dark" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+            <a class="btn btn-dark" asp-action="Index">Index</a>
+        </div>
+    </div>
+</div>
+

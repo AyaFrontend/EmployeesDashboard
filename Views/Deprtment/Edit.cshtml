@@ -1,0 +1,14 @@
+﻿@model EmployeesDashboard.Models.DepartmentViewModel
+
+<form asp-action="Edit" asp-controller="Deprtment">
+    <div class="row">
+        <div class="col-8">
+            <partial name="_EditCreateDepartmentPartialView" model="@Model" />
+            <div>
+                <input type="submit" value="Edit" class="btn btn-dark" asp-action="Edit" asp-route-id="@Model.Id" />
+                <a class="btn btn-dark" asp-action="Index">Index</a>
+            </div>
+
+        </div>
+    </div>
+</form>
